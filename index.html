@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- contact -->
+    <link rel="stylesheet" href="contact.html">
+    <!-- favicon -->
+    <link rel="icon" href="./images/weather.png">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- media Query -->
+    <link rel="stylesheet" href="./css/media-query.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex gap-3 align-items-center" href="index.html">
+                <img src="./images/windy.png" class="logo" alt="logo">
+                <div class="text-logo d-flex flex-column">
+                    <h1 class="site-title text-white">Weather</h1>
+                    <small class="smallP">tagline goes here</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.windy.com">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="site">
+            <div class="container">
+                <form class="searchForm mt-5 mx-auto d-flex gap-2 justify-content-center flex-wrap">
+                    <div class="searchBox position-relative">
+                        <input id="searchInput" type="text" placeholder="Search for city...">
+                        <button type="submit" class="btn"><i class="bi bi-search"></i></button>
+                    </div>
+                    <button onclick="findCurrentLocation()"class="btn" type="button">Current</button>
+                </form>
+                <div id="rowData" class="row">
+                    <!-- will add dynamically in js -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p class="text-center pt-5"> &copy;Copyright 2025. Designed by Anber. All rights reserved</p>
+        <div class="subscribe d-flex justify-content-center align-items-center">
+            <form class="subscribeForm mt-5 mx-auto d-flex gap-2 justify-content-center flex-wrap">
+                <div class="subscribeBox position-relative">
+                    <input id="subscribeInput" type="text" placeholder="Enter your email to subscribe...">
+                    <button type="submit" class="btn"> Subscribe</button>
+                </div>
+                <ul class="d-flex align-items-center justify-content-center gap-3 ">
+                    <li>
+                        <a href="www.facebook.com" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <div class="tooltip">Facebook</div>
+                    </li>
+                    <li>
+                        <a href="www.x.com" class="x"><i class="bi bi-twitter-x"></i></a>
+                        <div class="tooltip">X</div>
+                    </li>
+                    <li>
+                        <a href="https://mail.google.com/" class="gmail"><i class="bi bi-google"></i></a>
+                        <div class="tooltip">Gmail</div>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com/" class="pinterest"><i class="bi bi-pinterest"></i></a>
+                        <div class="tooltip">Pinterest</div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        
+    </footer>
+
+
+
+    <!-- Bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- main js -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

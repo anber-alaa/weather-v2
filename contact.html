@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- home -->
+    <link rel="stylesheet" href="index.html">
+    <!-- favicon -->
+    <link rel="icon" href="./images/weather.png">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- media Query -->
+    <link rel="stylesheet" href="./css/media-query.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex gap-3 align-items-center" href="index.html">
+                <img src="./images/windy.png" class="logo" alt="logo">
+                <div class="text-logo d-flex flex-column">
+                    <h1 class="site-title text-white">Weather</h1>
+                    <small class="smallP">tagline goes here</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.windy.com">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="themeSwitch">
+                <label for="themeToggle" class="switch">
+                    <input id="themeToggle" type="checkbox"/>
+                    <span class="slider"></span>
+                    <span class="decoration"></span>
+                </label>
+            </div>  -->
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-sm-12 col-md-5 mt-4">
+                        <div class="inner">
+                            <div class="card">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.327740004314!2d-118.38903392551659!3d34.03546311861824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b9793010985f%3A0xd51200f29f08ba96!2sReynier%20Park!5e0!3m2!1sen!2seg!4v1745058687932!5m2!1sen!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <div class="card-body">
+                                    <div class="d-flex gap-3">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        <p>Company Name INC. <br>2803 Avenue Street, Los Angeles</p>
+                                    </div>
+                                    <div class="contacts d-flex gap-5">
+                                        <div class="d-flex gap-3">
+                                            <i class="bi bi-telephone-fill"></i>
+                                            <p>+1 800 314 235</p>
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <i class="bi bi-envelope-fill"></i>
+                                            <a href="#" class="text-decoration-none text-black">contact@companyname.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-md-offset-1 ms-auto mt-4">
+                        <div class="inner text-white">
+                            <h2>Contact us</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+                            <form id="contactForm">
+                                <div class="d-flex gap-3 mb-2">
+                                    <input type="text" class="form-control" placeholder="Your Name ...">
+                                    <input type="email" class="form-control" placeholder="Email Address...">
+                                </div>
+                                <div class="d-flex gap-3 mb-2">
+                                    <input type="text" class="form-control" placeholder="Company Name ...">
+                                    <input type="email" class="form-control" placeholder="Website...">
+                                </div>
+                                <textarea class="form-control mb-3 px-4 py-3" placeholder="Message .." id="floatingTextarea"></textarea>
+                                <button type="submit" class="btn float-end"> Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="text-center pt-5"> &copy;Copyright 2025. Designed by Anber. All rights reserved</p>
+        <div class="subscribe d-flex justify-content-center align-items-center">
+            <form class="subscribeForm mt-5 mx-auto d-flex gap-2 justify-content-center flex-wrap">
+                <div class="subscribeBox position-relative">
+                    <input id="subscribeInput" type="text" placeholder="Enter your email to subscribe...">
+                    <button type="submit" class="btn"> Subscribe</button>
+                </div>
+                <ul class="d-flex align-items-center justify-content-center gap-3 ">
+                    <li>
+                        <a href="www.facebook.com" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <div class="tooltip">Facebook</div>
+                    </li>
+                    <li>
+                        <a href="www.x.com" class="x"><i class="bi bi-twitter-x"></i></a>
+                        <div class="tooltip">X</div>
+                    </li>
+                    <li>
+                        <a href="https://mail.google.com/" class="gmail"><i class="bi bi-google"></i></a>
+                        <div class="tooltip">Gmail</div>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com/" class="pinterest"><i class="bi bi-pinterest"></i></a>
+                        <div class="tooltip">Pinterest</div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        
+    </footer>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
